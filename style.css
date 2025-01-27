@@ -1,0 +1,248 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background: radial-gradient(#361764, #000000); /* Gradient */
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Adjust padding as needed */
+    font-family: Arial, sans-serif;
+    width: 100%; /* Footer spans the full width of the screen */
+    display: flex;
+    justify-content: center; /* Center the text box horizontally */
+    align-items: center; /* Center the text box vertically */
+  }
+
+  /* Dark overlay */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    pointer-events: none; /* Ensures the overlay doesn't block interactions */
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+  
+  /* Footer text box */
+  .footer-content {
+    /* max-width: 400px; Confined width for the text box */
+    width: 100%; /* Take full width up to the max-width */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding inside the text box */
+    /* background: rgba(0, 0, 0, 0.5); Optional: Add a semi-transparent background */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); Optional: Add a shadow */
+    z-index: 2;
+  }
+  
+  .footer-text {
+    font: 'San Francisco', Helvetica, Arial, san-serif;
+    max-width: 400px; /* Confined width for the text box */
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.2em); /* Responsive font size */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    z-index: 2;
+  }
+  
+  .footer-copyright {
+    font: 'San Francisco', Helvetica, Arial, san-serif;
+    font-size: clamp(0.8rem, 2vw, 0.9em); /* Responsive font size */
+    opacity: 0.8;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff9f9 , #B372CF ); /* Add your gradient here */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+    background-clip: text; /* Standard property for modern browsers */
+    -webkit-text-fill-color: transparent; /* Standard property for modern browsers */
+    font-size: clamp(0.8rem, 2vw, 0.9em); /* Responsive font size */
+    opacity: 0.8;
+    white-space: nowrap; /* Prevent text from wrapping */
+    z-index: 2;
+  }
+  h1{
+    padding-left: 20px;
+    font: 'San Francisco', Helvetica, Arial, san-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    background: linear-gradient(to bottom, #ffffff 30%, #bb4ee9 70% ); /* Add your gradient here */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+    background-clip: text; /* Standard property for modern browsers */
+    -webkit-text-fill-color: transparent; /* Standard property for modern browsers */
+  }
+  body {
+    background:#262626;
+  }
+  .demopadding {
+    margin:50px auto;
+    width:140px;
+    text-align:center;
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center; /* Center icons vertically */
+    gap: 40px; /* Space between icons */
+    padding: 10px; /* Optional: Add padding around the icons */
+    z-index: 2;
+    /* padding-right: 15rem; */
+    transform: translateX(-450px)
+  }
+  a{
+    text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent (or set a specific color) */
+  }
+  .icon {
+      position:relative;
+      text-align:center;
+      width:0px;
+      height:0px;
+      padding:20px;
+      /* border-top-right-radius: 	20px;
+      border-top-left-radius: 	20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 	20px;  */
+      /* -moz-border-radius: 		20px 20px 20px 20px;
+      -webkit-border-radius: 		20px 20px 20px 20px;
+      -khtml-border-radius: 		20px 20px 20px 20px; 	 */
+      color:#FFFFFF;
+  }
+  .icon i {
+      font-size:40px;
+      position:absolute;
+      left:9px;
+      top:10px;
+  }
+  .icon.social {
+      float:left;
+      margin:0 5px 0 0;
+      cursor:pointer;
+      color:#a4a4a4;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 	
+  }
+  .icon.social:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+      /* background:#dedede ; */
+      color:#ffffff;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      /* -webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	 */
+  }
+  .icon.social.in i {
+      left:13px;
+      top:10px;
+  }
+  .icon.social.yt i {
+      left:11px;
+  }
+  .icon.social.ig i {
+      left:11px;
+  }
+  
+  
+  /* Media Queries for Fine-Tuning */
+  /* Media Query for 1024px and larger screens */
+@media (min-width: 1024px) {
+    .demopadding {
+      gap: 30px; /* Increase space between icons for larger screens */
+      padding: 15px; /* Increase padding around icons */
+    }
+  
+    .icon {
+      font-size: 28px; /* Increase icon size for larger screens */
+      padding: 12px; /* Increase padding around icons */
+    }
+  }
+  
+  /* Media Queries for Smaller Screens */
+
+  @media (max-width: 768px) {
+    .footer-content {
+      max-width: 90%; /* Increase width for smaller screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .footer-text {
+      font-size: clamp(0.9rem, 2.5vw, 1em); /* Adjust font size for smaller screens */
+    }
+  
+    .footer-copyright {
+      font-size: clamp(0.7rem, 2vw, 0.8em); /* Adjust font size for smaller screens */
+    }
+  }
+  .demopadding {
+    gap: 40px;
+    padding: 10px; 
+  }
+
+  .icon {
+    font-size: 20px; 
+    padding: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content {
+      max-width: 95%; /* Further increase width for very small screens */
+      padding: 10px; /* Further adjust padding for very small screens */
+    }
+  
+    .footer-text {
+      font-size: clamp(0.8rem, 2.5vw, 0.9em); /* Further adjust font size */
+    }
+  
+    .footer-copyright {
+      font-size: clamp(0.6rem, 2vw, 0.7em); /* Further adjust font size */
+    }
+      .demopadding {
+        flex-direction: row; 
+        gap: 10px;
+        align-items: flex-end;
+      }
+    
+      .icon {
+        font-size: 18px; 
+        padding: 6px; 
+      }
+      @media (max-width: 480px) {
+        .footer-content {
+            max-width: 95%; /* Further increase width for very small screens */
+            padding: 10px; /* Further adjust padding for very small screens */
+          }
+        
+          .footer-text {
+            font-size: clamp(0.8rem, 2.5vw, 0.9em); /* Further adjust font size */
+          }
+        
+          .footer-copyright {
+            font-size: clamp(0.6rem, 2vw, 0.7em); /* Further adjust font size */
+          }
+        .demopadding {
+          flex-direction: column; /* Stack icons vertically */
+          gap: 40px; /* Space between stacked icons */
+           align-items: flex-end; /* Align icons to the right */
+        }
+        .icon {
+            font-size: 13px; /* Further reduce icon size */
+            padding: 6px; /* Further reduce padding around icons */
+          }
+      }
+  }
